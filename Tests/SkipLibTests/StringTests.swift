@@ -345,7 +345,7 @@ import Testing
     }
 
     @Test func unsignedStringFormats() {
-        #expect(String(format: "%llu", UInt64.zero) == "0")
+        #expect(String(format: "%llu", UInt64(0)) == "0")
         #expect(String(format: "%llu", UInt64.max) == "18446744073709551615")
         #expect(String(format: "%lu", UInt64.max) == "18446744073709551615")
         #expect(String(format: "%u", UInt32.max) == "4294967295")
